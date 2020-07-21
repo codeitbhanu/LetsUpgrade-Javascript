@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A #2</title>
+</head>
+
+<body>
+    <ul id='table' style="list-style: none;">
+    </ul>
+
+    <script>
+        let input = parseInt(prompt("Enter input number: "))
+        const tblElement = document.getElementById('table')
+        if (input) {
+            for (let i = 1; i <= 10; i++) {
+                const li = document.createElement('li');
+                li.innerText = `${input} x ${i} = ${input * i}`
+                tblElement.appendChild(li)
+            }
+        } else {
+            tblElement.innerHTML = '<p>Please refresh and enter a number</p>'
+        }
+    </script>
+</body>
+
+</html>

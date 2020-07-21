@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A #3</title>
+    
+    <style>
+        /* Google font */
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            color: #66ff99;
+            background-color: #121212;
+        }
+
+        #clock {
+            font-family: 'Orbitron', sans-serif;
+            color: #66ff99;
+            font-size: 56px;
+            text-align: center;
+            asdf
+        }
+    </style>
+</head>
+
+<body>
+    <div id="greet"></div>
+        <br>
+        <div id="clock"></div>
+
+    <script>
+        const greet = document.getElementById('greet')
+        const name = prompt("Hello, Please enter your name: ")
+
+        greet.innerText = `Welcome ${name}, To the awesome!`
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

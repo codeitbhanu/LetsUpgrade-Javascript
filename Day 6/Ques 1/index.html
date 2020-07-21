@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A #1</title>
+</head>
+
+<body>
+    <h1>Webpage that changes the background color every 5 seconds</h1>
+
+    <script>
+        const colors = ['8A4F7D', 'B98B82', 'EDD83D', '6AB547', 'F3F9E3', 'EF8275']
+        const setBodyColor = clr => {
+            console.log(`Color: ${clr}`)
+            document.body.style.backgroundColor = '#' + clr
+        }
+        let i = 0;
+        (function loopIt(i) {
+            setTimeout(function () {
+                // your code handling here
+                console.log(colors[i]);
+                if (i < colors.length - 1) {
+                    loopIt(i + 1)
+                    setBodyColor(colors[i])
+                }
+            }, 5000);
+        })(i)
+    </script>
+</body>
+
+</html>
